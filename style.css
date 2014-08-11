@@ -1,0 +1,500 @@
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+/*
+Colors:
+Orange: #FA6C06;
+Green: #78A69C;
+Cream: #F8D9A1;
+Purple: #312235;
+Red: #DE3207;
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+	font-family: 'Molengo', arial, serif;
+	background:url(images/subliminal.gif) 0 0 repeat;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img {
+	border: none;
+}
+
+a, a:visited{
+  text-decoration:none;
+  color:#111;
+}
+
+/* Structure */
+.content {
+	margin: 0 auto;
+	width: 1000px;
+	clear:both;
+	overflow:hidden;
+}
+
+h2{
+  margin-bottom:10px;
+  font-weight:bold;
+  color:#312235;
+  text-shadow: 2px 2px 3px #638293;
+  behavior: url(PIE.htc);
+}
+
+.contentbox{
+   background-color:#789cb0;
+   padding:10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   background: -webkit-gradient(
+       linear,
+       left bottom,
+       left top,
+       color-stop(0, rgba(93,121,135,.7)),
+       color-stop(0.41, rgba(120,156,176,.7))
+   );
+   background: -moz-linear-gradient(
+       center bottom,
+       rgba(93,121,135,.7) 0%,
+       rgba(120,156,176,.7) 41%
+
+   );
+   -moz-box-shadow: 1px 1px 2px #333;
+   -webkit-box-shadow:1px 1px 2px #333;
+   box-shadow: 1px 1px 2px #333;
+   behavior: url(PIE.htc);
+}
+
+.photobox{
+  background:rgb(93,121,135);
+  background:rgba(93,121,135,.8);
+  padding:8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 5px 5px 5px #333;
+  -webkit-box-shadow: 5px 5px 5px #333;
+  box-shadow: 5px 5px 5px #333;
+  behavior: url(PIE.htc);
+}
+
+#header{
+  border-bottom:4px solid #999;
+  position:relative;
+  margin-bottom:15px;
+  color:#eee;
+  background: #111;
+  background: -webkit-gradient(
+       linear,
+       left top,
+       right top,
+       color-stop(0, rgba(51,51,51,.8)),
+       color-stop(.3, rgba(0,0,0,1)),
+       color-stop(.7, rgba(0,0,0,1)),
+       color-stop(1, rgba(51,51,51,.8))
+   );
+   background: -moz-linear-gradient(
+       center left,
+       rgba(51,51,51,.8) 0%,
+       rgba(0,0,0,1) 30%,
+       rgba(0,0,0,1) 70%,
+       rgba(51,51,51,.8) 100%
+   );
+  /*background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.1, rgba(27,19,29,.7)),
+      color-stop(0.66, rgba(49,34,53,.7))
+  );
+  background: -moz-linear-gradient(
+      center bottom,
+      rgba(27,19,29,.7) 10%,
+      rgba(49,34,53,.7) 66%
+  );*/
+  behavior: url(PIE.htc);
+}
+
+#header h1{
+  font-family: 'Yanone Kaffeesatz', arial, serif;
+  width:900px;
+	margin: 0 auto;
+  font-size:66px;
+  text-shadow:1px 1px 2px #000;
+  behavior: url(PIE.htc);
+}
+
+#header .subtitle{
+  position:absolute;
+  left:50%;
+  margin-left:-200px;
+  top:60px;
+}
+
+#sidebar{
+  width:270px;
+  float:right;
+}
+
+#contact {
+  font-size:16px;
+  padding:5px 15px;
+  margin-right:2px;
+}
+
+.contact-form{
+  margin-top:10px;
+}
+
+.contact-form label{
+  width:50px;
+  display:block;
+  float:left;
+}
+
+#thank-you{
+  display:none;
+  padding-bottom:10px;
+  font-weight:bold;
+}
+
+#resume{
+  font-family: 'Yanone Kaffeesatz', arial, serif;
+  width:650px;
+  float:left;
+  padding:10px 18px 0 18px;
+  margin-bottom:20px;
+  font-size:18px;
+  line-height:28px;
+}
+
+#resume p{
+  margin-bottom:15px;
+}
+
+#resume a, a:visited{
+  text-decoration:underline;
+  color:#000;
+}
+
+#resume a:hover{
+  background:rgba(250,108,6, .6);
+  behavior: url(PIE.htc);
+}
+
+#devin{
+  width:300px;
+  overflow:hidden;
+  float:left;
+  margin: 0 15px 15px 0;
+
+}
+
+#portfolio {
+  clear:both;
+  overflow:hidden;
+  line-height:24px;
+  font-size:18px;
+  font-family: 'Yanone Kaffeesatz', arial, serif;
+  padding:10px;
+  min-height:300px;
+  margin-right:2px;
+  margin-bottom:2px;
+}
+
+
+#portfolio .set:nth-of-type(4n+1) {
+  clear: both;
+}
+
+.set{
+  width:213px;
+  overflow:hidden;
+  float:left;
+  margin:7px;
+  background:#111;
+}
+
+.set:hover{
+  background:#222;
+  cursor:pointer;
+  behavior: url(PIE.htc);
+}
+
+.set a, .set a:visited{
+  color:#ddd;
+}
+
+.image{
+  width:213px;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+}
+
+#portfolio img{
+  max-height:160px;
+  max-width: 210px;
+  border:none;
+}
+
+#sounds{
+  clear:both;
+  overflow:hidden;
+  line-height:24px;
+  font-size:18px;
+  font-family: 'Yanone Kaffeesatz', arial, serif;
+  padding:10px;
+  min-height:300px;
+  margin-right:2px;
+  margin-bottom:2px;
+  margin-top:20px;
+}
+
+.play{
+  position:absolute;
+  top:45px;
+  right:63px;
+  padding:25px;
+  background:rgb(30,30,30);
+  background:rgba(30,30,30,.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color:yellow;
+  font-size:40px;
+  behavior: url(PIE.htc);
+}
+
+#sounds .ui360{
+  margin-top: 0.5em;
+	float: left;
+}
+
+.ui360 a.sm2_link {
+  width: 158px;
+  color: rgb(221, 221, 221);
+  margin-top: -12px;
+}
+
+.ui360 a:hover, .ui360 a:focus {
+  background: none;
+  margin-top: -12px;
+}
+
+.sm2-360ui{
+  clear:both;
+}
+
+#sounds .ui360 .description{
+  width:533px;
+  font-size:14px;
+  margin-top:10px;
+  font-family: arial, sans-serif;
+  display: none;
+  margin-left: 18px;
+  float: left;
+}
+
+#footer{
+  margin-top: 20px;
+  height:90px;
+  clear:both;
+  text-align: center;
+  background: #312235;
+  background: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.1, rgba(27,19,29,.7)), color-stop(0.66, rgba(49,34,53,.7)));
+  border-top: 4px solid #999;
+  color: #EEE;
+  padding: 15px;
+  font-family: 'Yanone Kaffeesatz', arial, serif;
+  border-bottom: 4px solid #999;
+  text-shadow: #000 1px 1px 2px;
+  font-size: x-large;
+  behavior: url(PIE.htc);
+}
+
+#footer a img {
+  height: 55px;
+}
+
+#slider{
+  clear:both;
+  overflow:hidden;
+  height:333px;
+  margin:0 auto 30px auto;
+  border-top: 4px solid #999;
+  border-bottom: 4px solid #999;
+  background:rgb(0,0,0);
+  background:rgba(0,0,0,.5);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(0, rgba(51,51,51,.8)),
+      color-stop(.3, rgba(0,0,0,1)),
+      color-stop(.7, rgba(0,0,0,1)),
+      color-stop(1, rgba(51,51,51,.8))
+  );
+  background-image: -moz-linear-gradient(
+      center left,
+      rgba(51,51,51,.8) 0%,
+      rgba(0,0,0,1) 30%,
+      rgba(0,0,0,1) 70%,
+      rgba(51,51,51,.8) 100%
+  );
+  behavior: url(PIE.htc);
+}
+
+/* Carousel */
+
+.infiniteCarousel {
+  width: 700px;
+  margin:0 auto 30px auto;
+  position: relative;
+}
+
+.infiniteCarousel .wrapper {
+  width: 500px; /* .infiniteCarousel width - (.wrapper margin-left + .wrapper margin-right) */
+  overflow: auto;
+  min-height: 333px;
+  margin: 0 100px;
+  position: absolute;
+  top: 0;
+}
+
+.infiniteCarousel ul a img {
+  border:none;
+  width:500px;
+}
+
+.infiniteCarousel .wrapper ul {
+  width: 9999px;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  position: absolute;
+  top: 0;
+}
+
+.infiniteCarousel ul li {
+  display:block;
+  float:left;
+  height: 333px;
+  width: 500px;
+  position:relative;
+}
+
+.infiniteCarousel ul li .text{
+  position:absolute;
+  top:0;
+  right:15px;
+  width:210px;
+  padding:10px 10px 20px 10px;
+  color:#eee;
+  text-shadow: 2px 2px 3px #111;
+  font-weight:bold;
+  background:rgb(51,51,51);
+  background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.03, rgba(204,204,204,0)),
+      color-stop(1, rgba(51,51,51,.7))
+  );
+  background: -moz-linear-gradient(
+      center bottom,
+      rgba(204,204,204,0) 3%,
+      rgba(51,51,51,.7) 100%
+  );
+  behavior: url(PIE.htc);
+}
+
+.infiniteCarousel ul li a img {
+  display:block;
+}
+
+.infiniteCarousel .arrow {
+  display: block;
+  height:45px;
+  width: 45px;
+  background:rgb(100,100,100);
+  background:rgba(100,100,100,.3);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color:#000;
+  padding-left:15px;
+  padding-top:12px;
+  font-size:35px;
+  position: absolute;
+  top: 130px;
+  cursor: pointer;
+  margin:10px;
+  behavior: url(PIE.htc);
+}
+
+.infiniteCarousel .forward {
+  background-position: 0 0;
+  right: 0;
+  height:45px;
+  width: 41px;
+  padding-left:19px;
+}
+
+.infiniteCarousel .back {
+  background-position: 0 -72px;
+  left: 0;
+  height:45px;
+  width: 49px;
+  padding-left:11px;
+  line-height:40px;
+}
+
+.infiniteCarousel .forward:hover,.infiniteCarousel .back:hover {
+  background:rgb(120,120,120);
+  color:rgb(60,60,60);
+  color:rgba(60,60,60,.8);
+  -moz-box-shadow: 2px 2px 5px #333;
+  -webkit-box-shadow: 2px 2px 5px #333;
+  box-shadow: 2px 2px 5px #333;
+  behavior: url(PIE.htc);
+}
